@@ -1,4 +1,5 @@
 ### Версия с исправленной загрузкой по http изображений через omemo
+https://raw.githubusercontent.com/throwawaymicrosoft/gajim/master/debian/patches/local-upload-fix
 
 # Welcome to Gajim
 
