@@ -1,0 +1,52 @@
+environment:
+  matrix:
+    - MSYSTEM: MINGW64
+      MSYS_ARCH: "x86_64"
+      ARCH: "64bit"
+
+    - MSYSTEM: MINGW32
+      MSYS_ARCH: "i686"
+      ARCH: "32bit"
+
+branches:
+  only:
+    - gajim_1.1
+
+clone_depth: 1
+
+# init:
+#   - ps: iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/appveyor/ci/master/scripts/enable-rdp.ps1'))
+
+build_script:
+  - C:\msys64\usr\bin\pacman -Syu --needed --noconfirm --ask=20
+  - C:\msys64\usr\bin\pacman -Su --needed --noconfirm
+  - ps: |
+        $env:TIME_STRING=(get-date -UFormat "%Y-%m-%d").ToString()
+        $env:BUILDROOT="C:\msys64\home\appveyor\gajim\win\_build_root"
+
+        function bash($command) {
+          Write-Host $command -NoNewline
+          C:\msys64\usr\bin\sh.exe --login -c $command
+        }
+
+        bash "git clone C:/projects/gajim C:/msys64/home/appveyor/gajim"
+        bash "C:/msys64/home/appveyor/gajim/win/build.sh $($env:MSYS_ARCH)"
+        Push-AppveyorArtifact "$($env:BUILDROOT)/Gajim.exe" -FileName "Gajim-1.1.0-$($env:ARCH)-$($env:TIME_STRING).exe"
+        Push-AppveyorArtifact "$($env:BUILDROOT)/Gajim-Portable.exe" -FileName "Gajim-Portable-1.1.0-$($env:ARCH)-$($env:TIME_STRING).exe"
+
+# on_finish:
+#   - ps: $blockRdp = $true; iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/appveyor/ci/master/scripts/enable-rdp.ps1'))
+
+deploy:
+    # FTP deployment provider settings
+  - provider: FTP
+    protocol: ftp
+    host: panoramix.gajim.org
+    username:
+      secure: SNcOJDhUtBjfddbKXudE2w==
+    password:
+      secure: tQkYbcUb6nChCp0cdqo4CA==
+    folder: win_snap
+    active_mode: false
+    beta: true      # enable alternative FTP library for 'ftp' and 'ftps' modes
+    debug: true

@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>org.gajim.Gajim.desktop</id>
+  <provides>
+    <id>gajim.desktop</id>
+  </provides>
+  <metadata_license>CC-BY-SA-3.0</metadata_license>
+  <project_license>GPL-3.0</project_license>
+  <name>Gajim</name>
+  <name xml:lang="tr">Gajim</name>
+  <name xml:lang="hu">Gajim</name>
+  <name xml:lang="zh_TW">Gajim</name>
+  <name xml:lang="he">‫Gajim</name>
+  <name xml:lang="kk">Gajim</name>
+  <name xml:lang="ja">Gajim</name>
+  <name xml:lang="uk">Gajim</name>
+  <name xml:lang="da">Gajim</name>
+  <name xml:lang="lt">Gajim</name>
+  <name xml:lang="gl">Gajim</name>
+  <name xml:lang="sr@Latn">Gajim</name>
+  <name xml:lang="sr">Гајим</name>
+  <name xml:lang="be@latin">Gajim</name>
+  <name xml:lang="be">Gajim</name>
+  <name xml:lang="en_GB">Gajim</name>
+  <name xml:lang="hr">Gajim</name>
+  <name xml:lang="eo">Gajim</name>
+  <name xml:lang="br">Gajim</name>
+  <name xml:lang="zh_CN">Gajim</name>
+  <name xml:lang="sk">Gajim</name>
+  <name xml:lang="eu">Gajim</name>
+  <name xml:lang="it">Gajim</name>
+  <name xml:lang="sv">Gajim</name>
+  <name xml:lang="pt_BR">Gajim</name>
+  <name xml:lang="nl">Gajim</name>
+  <name xml:lang="cs">Gajim</name>
+  <name xml:lang="nb_NO">Gajim</name>
+  <name xml:lang="de">Gajim</name>
+  <name xml:lang="bg">Gajim</name>
+  <name xml:lang="ru">Gajim</name>
+  <name xml:lang="es">Gajim</name>
+  <name xml:lang="pl">Gajim</name>
+  <name xml:lang="el">Gajim</name>
+  <name xml:lang="pt">Gajim</name>
+  <name xml:lang="fr">Gajim</name>
+  <summary>A GTK+ Jabber client</summary>
+  <summary xml:lang="tr">Bir GTK+ Jabber istemcisi</summary>
+  <summary xml:lang="hu">Egy GTK+ Jabber kliens</summary>
+  <summary xml:lang="zh_TW">一個 GTK+ 的 Jabber 客戶端</summary>
+  <summary xml:lang="he">לקוח ג׳אבּר GTK+‎</summary>
+  <summary xml:lang="kk">GTK+ Jabber қолданбасы</summary>
+  <summary xml:lang="ja">GTK+ Jabber クライアント</summary>
+  <summary xml:lang="uk">Jabber клієнт, що базується на GTK+</summary>
+  <summary xml:lang="da">En GTK+ Jabber klient</summary>
+  <summary xml:lang="lt">GTK+ Jabber klientas</summary>
+  <summary xml:lang="gl">Un cliente de Jabber de GTK</summary>
+  <summary xml:lang="sr@Latn">GTK+ Džaber klijent</summary>
+  <summary xml:lang="sr">GTK+ Џабер клијент</summary>
+  <summary xml:lang="be@latin">Klijent Jabber dla GTK+</summary>
+  <summary xml:lang="be">Jabber-праграма для GTK+</summary>
+  <summary xml:lang="en_GB">A GTK+ Jabber client</summary>
+  <summary xml:lang="hr">GTK+ Jabber klijent</summary>
+  <summary xml:lang="eo">GTK+bazita jabber-kliento</summary>
+  <summary xml:lang="br">Ur flaperez Jabber e GTK+</summary>
+  <summary xml:lang="zh_CN">一个 GTK+ 的 Jabber 客户端</summary>
+  <summary xml:lang="sk">GTK+ Jabber klient</summary>
+  <summary xml:lang="eu">GTK+ Jabber bezeroa</summary>
+  <summary xml:lang="it">Un client Jabber GTK+</summary>
+  <summary xml:lang="sv">En GTK+-baserad Jabber-klient</summary>
+  <summary xml:lang="pt_BR">Um cliente Jabber GTK+</summary>
+  <summary xml:lang="nl">Een GTK+-Jabber-cliënt</summary>
+  <summary xml:lang="cs">GTK+ Jabber klient</summary>
+  <summary xml:lang="nb_NO">En GTK+ -XMPP-klient</summary>
+  <summary xml:lang="de">Ein Jabber/XMPP-Client in GTK+</summary>
+  <summary xml:lang="bg">Джабър клиент за GTK+</summary>
+  <summary xml:lang="ru">Jabber-клиент на GTK+</summary>
+  <summary xml:lang="es">Un cliente de Jabber en GTK</summary>
+  <summary xml:lang="pl">Klient Jabbera w GTK+</summary>
+  <summary xml:lang="el">Ένα πρόγραμμα για το Jabber γραμμένο σε GTK+</summary>
+  <summary xml:lang="pt">Cliente Jabber GTK+</summary>
+  <summary xml:lang="fr">Un client Jabber en GTK+</summary>
+  <description>
+    <p>Gajim is a chat client to be used with Jabber.org, Live Journal Talk,
+    Nimbuzz, Ovi, Talkonaut, and thousands of other services
+    run by companies and ISPs, and volunteers around the world.
+    </p>
+    <p xml:lang="ja">Gajim は、Jabber.org, Live Journal Talk, Nimbuzz, Ovi, Talkonaut やそのほか世界中の会社、ISP、ボランティアによる数多のサービスで使うことのできるチャットクライアントです。</p>
+    <p xml:lang="nl">Gajim is een chatprogramma voor Jabber.org, Live Journal Talk, Nimbuzz, Ovi, Talkonaut, en nog duizenden andere diensten die uitgebaat worden door bedrijven en ISP’s, en vrijwilligers over de hele wereld.</p>
+    <p xml:lang="nb_NO">Gajim er en sludreklient for bruk med Jabber.org, Live Journal Talk, Nimbuzz, Ovi, Talkonaut og tusenvis av andre tjenester drevet av selskaper og internettilbydere og frivillige verden over.</p>
+    <p xml:lang="de">Gajim ist ein Chatclient, der mit Jabber.org, Live Journal Talk, Nimbuzz, Ovi, Talkonaut und Tausenden anderen Services von Internetprovidern und Freiwilligen in aller Welt verwendet werden kann.</p>
+    <p xml:lang="fr">Gajim est un client de messagerie à utiliser avec jabber.org, Live Journal Talk, Nimbuzz, Ovi, Talkonaut et des milliers d'autres services utilisés par des entreprises, des fournisseur d'accès, et des bénévoles tout autour du globe.</p>
+    <p>If you have a few accounts on different servers, if you want to be in
+    contact with your friends and family all the time, then Gajim is for you.
+    </p>
+    <p xml:lang="ja">もし複数のサーバーのアカウントを持っていて、いつも友人や家族と連絡をとりたいと思っているなら、Gajim はそれにもってこいです。</p>
+    <p xml:lang="nl">Als je accounts op meerdere servers hebt en altijd in contact wil zijn met je vrienden en familie, is Gajim voor jou.</p>
+    <p xml:lang="nb_NO">Hvis du har forskjellige kontoer på forskjellige tjenere, eller ønsker kontakt med venner og familie, er Gajim for deg.</p>
+    <p xml:lang="de">Wenn sie einige Kontakte auf verschiedenen Servern haben oder wenn sie mit ihren Freunden und ihrer Familie jederzeit in Kontakt bleiben wollen, dann ist Gajim etwas für sie.</p>
+    <p xml:lang="fr">Si vous avez des comptes sur différents serveurs, si vous voulez être en contact avec vos amis et votre famille tout le temps, alors Gajim est fait pour vous.</p>
+    <p>Features:</p>
+    <p xml:lang="ja">機能:</p>
+    <p xml:lang="nl">Functies:</p>
+    <p xml:lang="nb_NO">Funksjonalitet:</p>
+    <p xml:lang="de">Features:</p>
+    <p xml:lang="fr">Fonctionnalités :</p>
+    <ul>
+      <li>Tabbed chat window and single window modes</li>
+      <li xml:lang="ja">タブ化チャットウィンドウと単一ウィンドウのモード</li>
+      <li xml:lang="nl">Modi voor gespreksvenster met tabbladen en aparte vensters</li>
+      <li xml:lang="nb_NO">Fanebaserte sludrevindu og enkeltvindusmodus</li>
+      <li xml:lang="de">Chat-Fenster im Karteikarten- und Einzel-Modus</li>
+      <li xml:lang="fr">Fenêtre de discussion par onglets et mode fenêtre unique</li>
+      <li>Group chat support (with Multi-User Chat protocol), invitation, chat to group chat transformation</li>
+      <li xml:lang="ja">グループチャットに対応 (Multi-User Chat プロトコル)、招待、グループチャット中継先とのチャット</li>
+      <li xml:lang="nl">Ondersteuning voor groepsgesprekken (met het Multi-User Chat-protocol), uitnodigingen en omschakelen van gesprekken naar groepsgesprekken</li>
+      <li xml:lang="nb_NO">Gruppesludringsstøtte (med flerbrukersludrings-protokoll), invitasjon, sludring til gruppesludringstransformasjon</li>
+      <li xml:lang="de">Unterstützung für Gruppenchats (mit Multi-User Chat Protokoll), Einladung, Umwandlung von Chats in Gruppenchats</li>
+      <li xml:lang="fr">Support des salons de discussion (avec le protocole MUC), invitation, transformation d'une conversation en un salon</li>
+      <li>Emoticons, avatars, PEP (user activity, mood and tune)</li>
+      <li xml:lang="ja">感情アイコン、アバター、PEP (ユーザーの動向、気分、聴いている楽曲)</li>
+      <li xml:lang="nl">Emoticons, avatars, PEP (gebruikersactiviteit, humeur en liedje)</li>
+      <li xml:lang="nb_NO">Smilefjes, avatarer, PEP (brukeraktivitet, humør og sang)</li>
+      <li xml:lang="de">Emoticons, Avatare, PEP (Benutzeraktivität, Stimmung und Musik)</li>
+      <li xml:lang="fr">Émoticônes, avatars, PEP (activité, humeur, musique écoutée par l'utilisateur)</li>
+      <li>Audio / video conferences</li>
+      <li xml:lang="ja">音声/ビデオ会議</li>
+      <li xml:lang="nl">Audio-/videoconferenties</li>
+      <li xml:lang="nb_NO">Lyd- /video-konferanser</li>
+      <li xml:lang="de">Audio- und Video-Konferenzen</li>
+      <li xml:lang="fr">conférences audio / vidéo</li>
+      <li>File transfer, room bookmarks</li>
+      <li xml:lang="ja">ファイル転送、談話室のブックマーク</li>
+      <li xml:lang="nl">Bestandsoverdracht, bladwijzers voor groepsgesprekken</li>
+      <li xml:lang="nb_NO">Filoverføring, rombokmerker</li>
+      <li xml:lang="de">Datenübertragung, Gruppenchats speichern</li>
+      <li xml:lang="fr">Transfert de fichier, marques-pages des salons</li>
+      <li>Metacontacts support</li>
+      <li xml:lang="ja">メタ相手先に対応</li>
+      <li xml:lang="nl">Ondersteuning voor metacontacten</li>
+      <li xml:lang="nb_NO">Metakontakt-støtte</li>
+      <li xml:lang="de">Unterstützung von Meta-Kontakten</li>
+      <li xml:lang="fr">Support des méta-contacts</li>
+      <li>Trayicon, speller, extended chat history functionalities</li>
+      <li xml:lang="ja">タスクトレイアイコン、スペルチェッカー、豊富なチャット履歴の機能</li>
+      <li xml:lang="nl">Taakbalkpictogram, spellingscontrole en uitgebreide gespreksgeschiedenisfunctionaliteit</li>
+      <li xml:lang="nb_NO">Systemkurvsikon, svavekontroll, utvidet sludrehistorikkfunksjonalitet</li>
+      <li xml:lang="de">Tray-Icon, Rechtschreibprüfung, erweiterte Funktionen für den Unterhaltungsverlauf</li>
+      <li xml:lang="fr">Zone de notification, correction orthographique, fonctionnalités sur l'historique</li>
+      <li>TLS, GPG and End-To-End encryption support</li>
+      <li xml:lang="ja">TLS, GPG, 端末間暗号化に対応</li>
+      <li xml:lang="nl">Ondersteuning voor TLS-, GPG- en End-to-End-versleuteling</li>
+      <li xml:lang="nb_NO">TLS, GPG og ende-til-ende -krypterings-støtte</li>
+      <li xml:lang="de">Unterstützung von TLS, GPG und Ende-zu-Ende-Verschlüsselung</li>
+      <li xml:lang="fr">TLS, OpenPGP, chiffrement de bout en bout</li>
+      <li>Transport registration support</li>
+      <li xml:lang="ja">中継先登録に対応</li>
+      <li xml:lang="nl">Ondersteuning voor transportregistratie</li>
+      <li xml:lang="nb_NO">Transportregistreringsstøtte</li>
+      <li xml:lang="de">Unterstützung für Transporte (ICQ, AIM, MSN, usw.)</li>
+      <li xml:lang="fr">Support de l'enregistrement avec des transports</li>
+      <li>Service discovery including nodes, user search</li>
+      <li xml:lang="ja">ノードやユーザー検索などのサービス探索</li>
+      <li xml:lang="it">Ricerca dei servizi inclusi i nodi, ricerca utente</li>
+      <li xml:lang="nl">Dienstontdekking inclusief knooppunten, zoeken naar gebruikers</li>
+      <li xml:lang="nb_NO">Tjenesteoppdagelse med noder, brukersøk</li>
+      <li xml:lang="de">Dienste durchsuchen (inkl. Jabber-Nodes), Benutzer-Suche</li>
+      <li xml:lang="fr">Découverte des services incluant les nœuds, la recherche d'utilisateurs</li>
+      <li>Wikipedia, dictionary and search engine lookup</li>
+      <li xml:lang="ja">Wikipedia や辞書、サーチエンジンの検索</li>
+      <li xml:lang="nl">Opzoeken op Wikipedia, woordenboek en zoekmachine</li>
+      <li xml:lang="nb_NO">Wikipedia, ordbok og søkemotoroppslag</li>
+      <li xml:lang="de">Wikipedia, Wörterbuch und Nachschlagen per Suchmaschine</li>
+      <li xml:lang="fr">Recherche dans Wikipedia, dictionnaire et moteur de recherche</li>
+      <li>Multiple accounts support</li>
+      <li xml:lang="ja">複数アカウントに対応</li>
+      <li xml:lang="nl">Ondersteuning voor meerdere accounts</li>
+      <li xml:lang="nb_NO">Støtte for flere kontoer</li>
+      <li xml:lang="de">Unterstützung mehrerer Konten</li>
+      <li xml:lang="fr">Support de comptes multiples</li>
+      <li>XML console interface</li>
+      <li xml:lang="ja">XML コンソールインターフェース</li>
+      <li xml:lang="nl">XML-console-interface</li>
+      <li xml:lang="nb_NO">XML-konsollgrensesnitt</li>
+      <li xml:lang="de">XML-Konsole</li>
+      <li xml:lang="fr">Console XML</li>
+      <li>Link local (bonjour / zeroconf), BOSH</li>
+      <li xml:lang="ja">リンクローカル (bonjour / zeroconf), BOSH</li>
+      <li xml:lang="nl">Link local (Bonjour / zeroconf), BOSH</li>
+      <li xml:lang="nb_NO">Link-local (bonjour / zeroconf), BOSH</li>
+      <li xml:lang="de">Link local (bonjour / zeroconf), BOSH</li>
+      <li xml:lang="fr">Lien local (bonjour / zeroconf), BOSH</li>
+      <li>Other features via plugins </li>
+      <li xml:lang="ja">プラグインによる機能拡張</li>
+      <li xml:lang="nl">Andere functies via plug-ins</li>
+      <li xml:lang="nb_NO">Andre funksjoner via programtillegg</li>
+      <li xml:lang="de">Erweiterbarer Funktionsumfang durch Plugins</li>
+      <li xml:lang="fr">Autres fonctionnalités avec des greffons</li>
+    </ul>
+  </description>
+  <categories>
+    <category>GNOME</category>
+    <category>GTK</category>
+    <category>InstantMessaging</category>
+    <category>Network</category>
+  </categories>
+  <screenshots>
+    <screenshot type="default">
+      <image>https://gajim.org/imgs/gajim_roster.png</image>
+      <caption>Roster, list of contacts</caption>
+      <caption xml:lang="ja">名簿 (相手先の一覧)</caption>
+      <caption xml:lang="nl">Rooster, contactenlijst</caption>
+      <caption xml:lang="nb_NO">Kontaktliste, liste over kontakter</caption>
+      <caption xml:lang="de">Kontaktliste, Liste von Kontakten</caption>
+      <caption xml:lang="fr">Liste de contacts</caption>
+    </screenshot>
+    <screenshot>
+      <image>https://gajim.org/imgs/gajim_tabbed_chat.png</image>
+      <caption>Tabbed chat window</caption>
+      <caption xml:lang="ja">タブ化チャットウィンドウ</caption>
+      <caption xml:lang="nl">Gespreksvenster met tabbladen</caption>
+      <caption xml:lang="nb_NO">Fanebasert sludrevindu</caption>
+      <caption xml:lang="de">Chatfenster mit Tabs</caption>
+      <caption xml:lang="fr">Fenêtre de discussion avec onglets</caption>
+    </screenshot>
+    <screenshot>
+      <image>https://gajim.org/imgs/groupchat_window.png</image>
+      <caption>Group chat support</caption>
+      <caption xml:lang="ja">グループチャットに対応</caption>
+      <caption xml:lang="nl">Ondersteuning voor groepsgesprekken</caption>
+      <caption xml:lang="nb_NO">Gruppesludringsstøtte</caption>
+      <caption xml:lang="de">Unterstützung von Gruppenchats</caption>
+      <caption xml:lang="fr">Support des salons de discussion</caption>
+    </screenshot>
+    <screenshot>
+      <image>https://gajim.org/imgs/history_window.png</image>
+      <caption>Chat history</caption>
+      <caption xml:lang="ja">会話の履歴</caption>
+      <caption xml:lang="nl">Gespreksgeschiedenis</caption>
+      <caption xml:lang="nb_NO">Sludrehistorikk</caption>
+      <caption xml:lang="de">Unterhaltungsverlauf</caption>
+      <caption xml:lang="fr">Historique des discussions</caption>
+    </screenshot>
+    <screenshot>
+      <image>https://gajim.org/imgs/gajim_plugins.png</image>
+      <caption>Plugin manager</caption>
+      <caption xml:lang="ja">プラグイン管理</caption>
+      <caption xml:lang="nl">Plug-inbeheer</caption>
+      <caption xml:lang="nb_NO">Programtilleggsbehandler</caption>
+      <caption xml:lang="de">Plugin-Manager</caption>
+      <caption xml:lang="fr">Gestionnaire de plugins</caption>
+    </screenshot>
+  </screenshots>
+  <launchable type="desktop-id">org.gajim.Gajim.desktop</launchable>
+  <developer_name>Gajim Team</developer_name>
+  <update_contact>gajim-devel_AT_gajim.org</update_contact>
+  <url type="homepage">https://gajim.org/</url>
+  <url type="bugtracker">https://dev.gajim.org/gajim/gajim</url>
+  <url type="faq">https://dev.gajim.org/gajim/gajim/wikis/help/gajimfaq</url>
+  <url type="help">https://dev.gajim.org/gajim/gajim/wikis/help/home</url>
+  <url type="donation">https://gajim.org/dev.php#donate</url>
+  <url type="translate">https://dev.gajim.org/gajim/gajim/wikis/development/DevTranslate</url>
+  <translation type="gettext">gajim</translation>
+  <content_rating type="oars-1.0">
+    <content_attribute id="violence-cartoon">none</content_attribute>
+    <content_attribute id="violence-fantasy">none</content_attribute>
+    <content_attribute id="violence-realistic">none</content_attribute>
+    <content_attribute id="violence-bloodshed">none</content_attribute>
+    <content_attribute id="violence-sexual">none</content_attribute>
+    <content_attribute id="drugs-alcohol">none</content_attribute>
+    <content_attribute id="drugs-narcotics">none</content_attribute>
+    <content_attribute id="drugs-tobacco">none</content_attribute>
+    <content_attribute id="sex-nudity">none</content_attribute>
+    <content_attribute id="sex-themes">none</content_attribute>
+    <content_attribute id="language-profanity">none</content_attribute>
+    <content_attribute id="language-humor">none</content_attribute>
+    <content_attribute id="language-discrimination">none</content_attribute>
+    <content_attribute id="social-chat">intense</content_attribute>
+    <content_attribute id="social-info">none</content_attribute>
+    <content_attribute id="social-audio">intense</content_attribute>
+    <content_attribute id="social-location">none</content_attribute>
+    <content_attribute id="social-contacts">none</content_attribute>
+    <content_attribute id="money-purchasing">none</content_attribute>
+    <content_attribute id="money-gambling">none</content_attribute>
+  </content_rating>
+  <releases>
+    <release version="1.0.3" date="2018-05-20"/>
+    <release version="1.0.2" date="2018-04-30"/>
+    <release version="1.0.1" date="2018-04-01"/>
+    <release version="1.0.0" date="2018-03-17"/>
+  </releases>
+</component>

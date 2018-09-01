@@ -1,0 +1,21 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@ --with python3 --buildsystem=pybuild
+
+# The Makefile test target is broken and refers to a non-existant test/runtests.py;
+# in fact that target should not exist at all.
+override_dh_auto_test:
+
+override_dh_auto_clean:
+	python3 setup.py clean -a
+	rm -rf $$(find gajim/ -name __pycache__)
+
+override_dh_auto_configure:
+	python3 setup.py config
+
+override_dh_auto_build:
+	python3 setup.py build
+
+override_dh_auto_install:
+	python3 setup.py install --install-layout=deb --root=$(CURDIR)/debian/gajim

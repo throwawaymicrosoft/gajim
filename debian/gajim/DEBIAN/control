@@ -1,0 +1,18 @@
+Package: gajim
+Version: 1.1.0~beta1-1
+Architecture: all
+Maintainer: Debian XMPP Maintainers <pkg-xmpp-devel@lists.alioth.debian.org>
+Installed-Size: 17434
+Depends: python3-cssutils (>= 1.0.2), python3-keyring, python3-nbxmpp (>= 0.6.7), python3-openssl (>= 0.12), python3:any, gir1.2-gtk-3.0 (>= 3.22), python3 (>= 3.5), python3-gi, python3-gi-cairo, python3-idna
+Recommends: aspell-en | aspell-dictionary, ca-certificates, dbus, fonts-noto-color-emoji, gajim-omemo (>= 2.5.1), gajim-pgp, gir1.2-farstream-0.2, gir1.2-geoclue-2.0, gir1.2-gspell-1, gir1.2-gst-plugins-base-1.0, gir1.2-gstreamer-1.0, gir1.2-gupnpigd-1.0, gir1.2-secret-1, gstreamer0.10-plugins-ugly, notification-daemon, pulseaudio-utils | alsa-utils | sox | oss4-base, python3-crypto, python3-dbus (>= 0.81), python3-gnupg (>= 0.4.1), python3-pil, python3-precis-i18n
+Suggests: avahi-daemon, libxss1, nautilus-sendto, python3-gconf, python3-gnome2, python3-kerberos (>= 1.1), python3-pycurl
+Breaks: gajim-antispam (<< 1.4.4), gajim-httpupload, gajim-omemo (<< 2.5.6), gajim-triggers (<< 0.2), gajim-urlimagepreview (<< 2.1.5)
+Replaces: gajim-httpupload
+Provides: gajim-httpupload
+Section: net
+Priority: optional
+Homepage: https://gajim.org/
+Description: GTK+-based Jabber client
+ Gajim is a Jabber client. It has a tabbed user interface with normal chats,
+ group chats, and has many features such as, TLS, GPG, SSL, multiple accounts,
+ avatars, file transfers, audio/video call, D-Bus and Metacontacts.

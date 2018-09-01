@@ -1,0 +1,11 @@
+Metadata-Version: 1.1
+Name: gajim
+Version: 1.0.99
+Summary: A GTK+ Jabber client
+Home-page: https://gajim.org
+Author: Philipp Hörist, Yann Leboulanger
+Author-email: gajim-devel@gajim.org
+License: GPL v3
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3

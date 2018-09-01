@@ -1,0 +1,222 @@
+/* Gajim Application CSS File */
+
+.gajim-state-composing {
+    color: rgb(0, 139, 0)
+    }
+.gajim-state-inactive {
+    color: rgb(158, 158, 158)
+    }
+.gajim-state-gone {
+    color: rgb(128, 128, 128)
+    }
+.gajim-state-paused {
+    color: rgb(0, 0, 205)
+    }
+.gajim-msg-correcting text {
+    background: rgb(238, 232, 170)
+    }
+.gajim-state-tab-muc-directed-msg {
+    color: rgb(238, 0, 0)
+    }
+.gajim-state-tab-muc-msg {
+    color: rgb(0, 0, 205)
+    }
+.gajim-banner {
+    font-size: 13pt;
+    font-weight: 700
+    }
+
+
+.chatcontrol-actionbar-button { 
+	padding: 0px 5px 0px 5px;
+	background-color: @theme_base_color; 
+	border: none;
+	}
+
+.scrolled-no-border {border: none}
+.no-scroll-indicator undershoot.top, undershoot.bottom { background-image: none; }
+.scrollbar-style scrollbar trough {background-color:@theme_base_color; }
+.scrollbar-style scrollbar {border:none; }
+.scrollbar-style slider {min-width: 3px; background-color: #a0a3a4}
+
+.actionbar-no-border box {border: none}
+.actionbar-no-border button { 
+	padding: 0px;
+	background-color: @theme_base_color; 
+	border: none;
+	background-image: none;
+	}
+
+.dialog-margin > box { margin: 18px;}
+
+#MessageWindow, #RosterWindow paned { background-color:  @theme_base_color; }
+
+.chatcontrol-separator-top {margin-top: 5px;}
+
+.chatcontrol-separator {margin-bottom: 5px;}
+
+#SubjectPopover box { padding: 10px; }
+
+/* VCardWindow */
+.VCard-GtkLinkButton { padding-left: 5px; border-left: none; }
+
+/* Emoticon Popover */
+popover#EmoticonPopover button { background: none; border: none; box-shadow:none; padding: 0px;}
+popover#EmoticonPopover button > label { font-size: 24px; }
+popover#EmoticonPopover flowboxchild > label { font-size: 24px; }
+popover#EmoticonPopover flowboxchild { padding-top: 5px; padding-bottom: 5px; }
+popover#EmoticonPopover scrolledwindow { border: none; }
+popover#EmoticonPopover { padding: 5px; background-color: @theme_unfocused_base_color}
+
+.emoji-chooser-heading { font-size: 13px; font-weight: bold; padding: 5px;}
+.emoji-chooser-flowbox { padding-left: 5px; padding-right: 11px; }
+.emoji-modifier-chooser-flowbox { padding-left: 5px; }
+
+/* HistorySyncAssistant */
+#HistorySyncAssistant list { border: 1px solid; border-color: @borders; }
+#HistorySyncAssistant progressbar text { color: #000; font-size: 18px; padding: 10px;}
+#HistorySyncAssistant list > row { padding: 10px 30px 10px 30px; }
+#HistorySyncAssistant list > row > label { color: @insensitive_fg_color }
+#HistorySyncAssistant list > row.activatable > label { color: @theme_text_color; }
+#HistorySyncAssistant list > row.activatable:selected > label { color: @theme_selected_fg_color; }
+#FinishedLabel { font-size: 14px; font-weight: bold }
+
+/* Server Info */
+#ServerInfoGrid > list { border: 1px solid; border-color: @borders; }
+#ServerInfoGrid > list > row:first-child { border-top: 1px solid; border-color: @borders; }
+#ServerInfoGrid > list > row { padding: 10px 20px 10px 10px; }
+#ServerInfoGrid > list > label { padding:10px; color: @insensitive_fg_color; font-weight: bold; }
+#ServerInfoGrid > list > row.activatable:active { box-shadow: none; }
+
+/* OptionsBox */
+#OptionsBox > row { border-bottom: 1px solid; border-color: @theme_unfocused_bg_color; }
+#OptionsBox > row:last-child { border-bottom: 0px}
+#OptionsBox > row.activatable:active { box-shadow: none; }
+#OptionsBox > row { padding: 10px 20px 10px 10px; }
+#OptionsBox > row:not(.activatable) label { color: @insensitive_fg_color }
+
+/* GenericOption */
+#SubDescription { color: @insensitive_fg_color;}
+#GenericOptionBox { margin-left: 30px; }
+#GenericOptionBox > label { padding-right: 3px; }
+
+/* Generic Popover Menu with Buttons */
+.PopoverButtonListbox { padding-left: 0px; padding-right: 0px; }
+.PopoverButtonListbox > list { margin-top: 10px; margin-bottom: 10px; }
+.PopoverButtonListbox > list > row { padding: 10px 20px 10px 20px; }
+.PopoverButtonListbox > list > row.activatable:active { box-shadow: none; background-color: @theme_selected_bg_color }
+
+/* Settings ListBox */
+
+list.settings {
+	border: @borders 1px solid;
+}
+list.settings > row:not(:last-child) {
+	border-bottom: @theme_unfocused_bg_color 1px solid;
+}
+list.settings row { min-height: 52px; }
+list.settings > row > box {
+    margin: 6px 18px;
+}
+
+/* Accounts Window */
+#AccountsWindow > box > stack { padding:30px 30px 30px 30px;}
+#AccountsWindow scrolledwindow {border: none;}
+#AccountsWindow stack list {border: 1px solid; border-color: @borders;}
+
+#AccountsWindow > box > box { border-right: 1px solid; border-color: @borders; }
+
+.account-list > row { padding: 20px 20px 20px 10px; }
+
+/* StartChatListBox */
+#StartChatListBox > row { border-bottom: 1px solid; border-color: @theme_unfocused_bg_color; }
+#StartChatListBox > row:last-child { border-bottom: 0px}
+#StartChatListBox > row.activatable:active { box-shadow: none; }
+#StartChatListBox > row { padding: 10px 20px 10px 10px; }
+#StartChatListBox > row:not(.activatable) label { color: @insensitive_fg_color }
+
+/* Popover Treeview */
+.popover_treeview { border-radius: 3px; background-color: @theme_bg_color; }
+.popover_treeview { padding: 6px; }
+.popover_treeview :hover { background-color: @theme_selected_bg_color; }
+
+/* .inline-toolbar linked from top */
+.ontop-bar {
+    border-width: 1px;
+    border-bottom: none;
+    border-radius: 3px 3px 0 0;
+    padding: 5px;
+}
+
+/* Container with buttons linked from below */
+.linked-up * {
+    border-top: none;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+/* Highlighted label */
+.tagged {
+    background-color: @theme_selected_bg_color;
+    color: @theme_selected_fg_color;
+    padding: 0 3px;
+    margin: 0 -3px;
+    border-radius: 3px;
+    text-shadow: none;
+    opacity: 0.95;
+}
+
+/* ThemesWindow */
+#ThemesWindow grid { padding: 12px; }
+
+.theme_listbox row { border-bottom: 1px solid; border-color: @theme_unfocused_bg_color; padding: 5px 10px 5px 10px;}
+.theme_listbox row:last-child { border-bottom: 0px}
+.theme_listbox row.activatable:active { box-shadow: none; }
+.theme_listbox row:not(.activatable) label { color: @insensitive_fg_color }
+.theme_listbox row:focus { outline: none; }
+.theme_listbox row:hover { background-color: @theme_base_color }
+
+.theme_remove_button {
+    background-color: @theme_base_color; 
+    border: none;
+    background-image: none; }
+
+.theme_remove_button:focus {outline: none;}
+
+.theme_popover_listbox { padding: 10px; }
+.theme_popover_listbox row { padding: 5px; }
+.theme_popover_listbox row:focus { outline: none; }
+
+
+/* Text style */
+
+.bold16 { font-size: 16px; font-weight: bold; }
+.bold24 { font-size: 24px; font-weight: bold; }
+.large-header { font-size: 20px; font-weight: bold; }
+.status-away { color: #ff8533;}
+.status-dnd { color: #e62e00;}
+.status-online { color: #66bf10;}
+
+/* Treeview */
+treeview.space { padding: 6px; }
+
+/* GtkLinkButton style */
+button.flat.link { padding: 0; border: 0; }
+
+/*MessageWindow Notebook*/
+.notebook-tab-label {min-width: 80px}
+
+/*SendFileDialog*/
+#SendFileDialog grid {padding: 12px}
+#SendFileDialog grid list { background-color: @theme_bg_color}
+
+/*Icon colors*/
+.success-color { color: @success_color; }
+.error-color { color: @error_color; }
+.warning-color { color: @warning_color; }
+
+/*Dataforms*/
+.field-fixed { font-size: 16px; font-weight: bold; padding-top:5px;}
+.data-form-title { font-size: 16px; font-weight: bold; }
+.data-form-widget scrolledwindow { border: 1px solid; border-color:@unfocused_borders; }
+.data-form-widget treeview { padding: 5px; }

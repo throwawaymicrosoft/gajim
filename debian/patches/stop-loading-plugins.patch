@@ -1,0 +1,17 @@
+Description: stop loading plugin list without users consent
+Author: W. Martin Borgert <debacle@debian.org>
+Origin: vendor
+Bug-Debian: https://bugs.debian.org/805620
+Last-Update: 2018-08-21
+
+--- a/gajim/gui_interface.py
++++ b/gajim/gui_interface.py
+@@ -2618,7 +2618,7 @@
+ 
+         if not cfg_was_read:
+             # enable plugin_installer by default when creating config file
+-            app.config.set_per('plugins', 'plugin_installer', 'active', True)
++            app.config.set_per('plugins', 'plugin_installer', 'active', False)
+ 
+         # Load CSS files
+         app.load_css_config()

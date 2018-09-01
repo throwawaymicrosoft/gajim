@@ -1,0 +1,4 @@
+do-not-use-distutils.patch
+no-git-call.patch
+stop-loading-plugins.patch
+local-upload-fix

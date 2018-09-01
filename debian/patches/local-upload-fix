@@ -1,0 +1,53 @@
+Description: <short summary of the patch>
+ TODO: Put a short summary on the line above and replace this paragraph
+ with a longer explanation of this change. Complete the meta-information
+ with other relevant fields (see below for details). To make it easier, the
+ information below has been extracted from the changelog. Adjust it or drop
+ it.
+ .
+ gajim (1.1.0~beta1-1) unstable; urgency=medium
+ .
+   * new upstream version
+Author: W. Martin Borgert <debacle@debian.org>
+
+---
+The information above should follow the Patch Tagging Guidelines, please
+checkout http://dep.debian.net/deps/dep3/ to learn about the format. Here
+are templates for supplementary fields that you might want to add:
+
+Origin: <vendor|upstream|other>, <url of original patch>
+Bug: <url in upstream bugtracker>
+Bug-Debian: https://bugs.debian.org/<bugnumber>
+Bug-Ubuntu: https://launchpad.net/bugs/<bugnumber>
+Forwarded: <no|not-needed|url proving that it has been forwarded>
+Reviewed-By: <name and email of someone who approved the patch>
+Last-Update: 2018-09-01
+
+--- gajim-1.1.0~beta1.orig/gajim/common/modules/httpupload.py
++++ gajim-1.1.0~beta1/gajim/common/modules/httpupload.py
+@@ -251,11 +251,11 @@ class HTTPUpload:
+             self.raise_information_event('request-upload-slot-error2')
+             return
+ 
+-        if (urlparse(file.put).scheme != 'https' or
+-                urlparse(file.get).scheme != 'https'):
+-            self.raise_progress_event('close', file)
+-            self.raise_information_event('unsecure-error')
+-            return
++        # if (urlparse(file.put).scheme != 'https' or
++        #         urlparse(file.get).scheme != 'https'):
++        #     self.raise_progress_event('close', file)
++        #     self.raise_information_event('unsecure-error')
++        #     return
+ 
+         try:
+             file.stream = StreamFileWithProgress(file)
+@@ -351,7 +351,7 @@ class HTTPUpload:
+ 
+     @staticmethod
+     def convert_to_aegscm(url):
+-        return 'aesgcm' + url[5:]
++        return 'aesgcm:' + url[5:]
+ 
+ 
+ class File:

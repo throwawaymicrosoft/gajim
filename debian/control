@@ -1,0 +1,83 @@
+Source: gajim
+Section: net
+Priority: optional
+Maintainer: Debian XMPP Maintainers <pkg-xmpp-devel@lists.alioth.debian.org>
+Uploaders: Tanguy Ortolo <tanguy+debian@ortolo.eu>,
+    Norbert Tretkowski <norbert@tretkowski.de>,
+    W. Martin Borgert <debacle@debian.org>
+Build-Depends:
+    debhelper (>= 11),
+    dh-python,
+    gettext (>= 0.17-4),
+    imagemagick,
+    intltool (>= 0.40.1),
+    libglib2.0-dev,
+    python3,
+    python3-cssutils,
+    python3-distutils,
+    python3-gi,
+    python3-gi-cairo,
+    gir1.2-gtk-3.0,
+    python3-nbxmpp,
+    python3-setuptools
+Rules-Requires-Root: no
+Standards-Version: 4.1.4
+Homepage: https://gajim.org/
+Vcs-Git: https://salsa.debian.org/xmpp-team/gajim.git
+Vcs-Browser: https://salsa.debian.org/xmpp-team/gajim
+
+Package: gajim
+Architecture: all
+Depends:
+    ${misc:Depends},
+    ${python3:Depends},
+    gir1.2-gtk-3.0 (>= 3.22),
+    python3 (>= 3.5),
+    python3-cssutils (>= 1.0.2),
+    python3-gi,
+    python3-gi-cairo,
+    python3-idna,
+    python3-nbxmpp (>= 0.6.7),
+    python3-openssl (>= 0.12),
+Recommends:
+    aspell-en | aspell-dictionary,
+    ca-certificates,
+    dbus,
+    fonts-noto-color-emoji,
+    gajim-omemo (>= 2.5.1),
+    gajim-pgp,
+    gir1.2-farstream-0.2,
+    gir1.2-geoclue-2.0,
+    gir1.2-gspell-1,
+    gir1.2-gst-plugins-base-1.0,
+    gir1.2-gstreamer-1.0,
+    gir1.2-gupnpigd-1.0,
+    gir1.2-secret-1,
+    gstreamer0.10-plugins-ugly,
+    notification-daemon,
+    pulseaudio-utils | alsa-utils | sox | oss4-base,
+    python3-crypto,
+    python3-dbus (>=0.81),
+    python3-gnupg (>= 0.4.1),
+    python3-keyring,
+    python3-pil,
+    python3-precis-i18n,
+Suggests:
+    avahi-daemon,
+    libxss1,
+    nautilus-sendto,
+    python3-gconf,
+    python3-gnome2,
+    python3-kerberos (>= 1.1),
+    python3-pycurl,
+Breaks: gajim-antispam (<< 1.4.4),
+    gajim-httpupload,
+    gajim-omemo (<< 2.5.6),
+    gajim-triggers (<< 0.2),
+    gajim-urlimagepreview (<< 2.1.5)
+Replaces: gajim-httpupload
+Provides: gajim-httpupload
+Description: GTK+-based Jabber client
+ Gajim is a Jabber client. It has a tabbed user interface with normal chats,
+ group chats, and has many features such as, TLS, GPG, SSL, multiple accounts,
+ avatars, file transfers, audio/video call, D-Bus and Metacontacts.

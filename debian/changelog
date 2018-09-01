@@ -1,0 +1,591 @@
+gajim (1.1.0~beta1-1) unstable; urgency=medium
+
+  * new upstream version
+
+ -- W. Martin Borgert <debacle@debian.org>  Tue, 21 Aug 2018 09:29:13 +0000
+
+gajim (1.0.3-1) unstable; urgency=medium
+
+  * new upstream version
+  * remove unneeded recommends (Closes: #898434)
+  * remove upstream patch
+  * depend on latest python3-nbxmpp
+
+ -- W. Martin Borgert <debacle@debian.org>  Sun, 20 May 2018 08:48:38 +0000
+
+gajim (1.0.2-1) unstable; urgency=medium
+
+  * new upstream version
+  * bump standars version
+  * add upstream patch to fix gtk-css-provider-error-quark exception,
+    delete obsolete patch, update patches
+
+ -- W. Martin Borgert <debacle@debian.org>  Tue, 01 May 2018 07:26:33 +0000
+
+gajim (1.0.1-3) unstable; urgency=medium
+
+  * fix a backtrace in the preferences dialog, now really, really
+    (Closes: #886324, #893724)
+
+ -- W. Martin Borgert <debacle@debian.org>  Wed, 04 Apr 2018 20:21:12 +0000
+
+gajim (1.0.1-2) unstable; urgency=medium
+
+  * new upstream version
+  * which hopefully does not crash in preferences anymore
+    (Closes: #886324, #893724)
+  * add patch to not use distutils (Closes: #893694)
+  * update dependencies
+  * do not install cacerts.pem
+  * do not remove emoticon themes anymore
+  * fix d/ch date
+
+ -- W. Martin Borgert <debacle@debian.org>  Sun, 01 Apr 2018 21:31:28 +0000
+
+gajim (1.0.0-1) unstable; urgency=medium
+
+  * new upstream version
+
+ -- W. Martin Borgert <debacle@debian.org>  Sun, 18 Mar 2018 10:44:45 +0000
+
+gajim (1.0.0~beta2-1) unstable; urgency=medium
+
+  * new upstream version
+  * break gajim-httpupload, functionality is in gajim since 1.0.0~beta1
+    (Closes: #889954)
+
+ -- W. Martin Borgert <debacle@debian.org>  Sun, 18 Feb 2018 20:26:52 +0000
+
+gajim (1.0.0~beta1-1) unstable; urgency=medium
+
+  * new upstream version
+
+ -- W. Martin Borgert <debacle@debian.org>  Thu, 08 Feb 2018 22:03:46 +0000
+
+gajim (1.0.0~alpha3-1) unstable; urgency=medium
+
+  * new upstream snapshot (not tagged) fixing several issues
+  * move to Debian XMPP Maintainers and salsa.debian.org
+  * Bump standars version
+
+ -- W. Martin Borgert <debacle@debian.org>  Wed, 07 Feb 2018 19:24:06 +0000
+
+gajim (1.0.0~alpha2-1) unstable; urgency=medium
+
+  * new upstream version fixing DB issues
+
+ -- W. Martin Borgert <debacle@debian.org>  Sun, 17 Dec 2017 20:52:46 +0000
+
+gajim (1.0.0~alpha1-1) unstable; urgency=medium
+
+  * new upstream version
+  * suggest gir1.2-gupnpigd-1.0 rather than python3-gupnp-igd
+    (Closes: #879038)
+  * does not use gnomekeyring anymore (Closes: #844156)
+  * does not use OpenSSL rand anymore (Closes: #884311, #884358)
+  * does not use demandimport anymore (Closes: #835472)
+
+ -- W. Martin Borgert <debacle@debian.org>  Sat, 16 Dec 2017 17:07:21 +0000
+
+gajim (0.16.8-5) unstable; urgency=medium
+
+  * Dropped gpg patch altogether (Closes: #874791) again
+
+ -- W. Martin Borgert <debacle@debian.org>  Thu, 14 Sep 2017 07:48:59 +0000
+
+gajim (0.16.8-4) unstable; urgency=medium
+
+  * Add updated patch to disable plugin installer by default (Closes: #805620)
+  * Update patch to use gpg2 now with new python-gnugp (Closes: #874791)
+
+ -- W. Martin Borgert <debacle@debian.org>  Sun, 10 Sep 2017 08:44:29 +0000
+
+gajim (0.16.8-3) unstable; urgency=medium
+
+  * Recommend python-gnupg and use explicitly 'gpg1', because
+    python-gnupg is not yet compatible with 'gpg2' (modern 'gpg')
+    (Closes: #865097)
+  * python-gnupg is not embedded anymore (Closes: #839772)
+  * Apply upstream patch to pass use-agent to gnupg
+  * Apply upstream patch to pass UTF-8 encoding to gnupg
+  * Bump standards version (no changes)
+
+ -- W. Martin Borgert <debacle@debian.org>  Mon, 26 Jun 2017 20:38:40 +0000
+
+gajim (0.16.8-2) unstable; urgency=medium
+
+  * Upload to unstable.
+
+ -- W. Martin Borgert <debacle@debian.org>  Fri, 16 Jun 2017 19:04:41 +0000
+
+gajim (0.16.8-1) experimental; urgency=low
+
+  * New upstream release.
+  * Change of maintainer and uploaders.
+
+ -- W. Martin Borgert <debacle@debian.org>  Thu, 08 Jun 2017 22:10:32 +0000
+
+gajim (0.16.7-1) experimental; urgency=low
+
+  * New upstream release.
+
+ -- Norbert Tretkowski <norbert@tretkowski.de>  Tue, 07 Feb 2017 10:55:37 +0100
+
+gajim (0.16.6-1) unstable; urgency=low
+
+  * New upstream release (closes: #839780)
+  * debian/docs, debian/README.Debian: removed reference to python-farstream,
+    no longer in the archive
+  * debian/patches/fix-gpg2-status.patch: remove patch, merged upstream
+
+ -- Norbert Tretkowski <norbert@tretkowski.de>  Sat, 08 Oct 2016 12:10:31 +0200
+
+gajim (0.16.5-2) unstable; urgency=medium
+
+  * debian/patches/fix-gpg2-status.patch: backport a fix to handle new GnuPG
+    status. (Closes: #834399, #831394)
+  * debian/control:
+     - reformat dependency fields with multiple lines, one per entry, sorted
+       alphabetically (easier to maintain).
+     - depend on debhelper >= 9.
+     - switch VCS-* URLs to HTTPS.
+     - update Standards-Version to 3.9.8 (removed deprecated Debian menu
+       entry).
+     - recommend sound utilities that are used to play sound.
+       (Closes: #733458)
+     - depend on rather than recommend on python-openssl and python-pyasn1,
+       which are required for secure connections. (Closes: #767317)
+     - recommend rather than depend on dbus and python-dbus. (Closes: #831738)
+     - actually remove suggestion of python-farstream (it was mentioned but
+       not really done last time).
+     - build-depend on dh-python, which provides the backend for dh_python2.
+  * debian/compat: switch to recommended debhelper level 9.
+  * debian/rules: remove rules meant to create the now deprecated Debian menu
+    icon.
+  * debian/gajim.menu, debian/install: remove the now deprecated Debian menu
+    entry.
+  * debian/watch:
+     - revert to previous way of getting released tarballs from a directory
+       index (works fine and allows one to fetch older releases if needed)
+       rather than a website page (only provides latest version).
+     - switch to HTTPS.
+     - take into accounts tarballs with bzip2 and XZ.
+
+ -- Tanguy Ortolo <tanguy+debian@ortolo.eu>  Wed, 24 Aug 2016 13:33:27 +0200
+
+gajim (0.16.5-1) unstable; urgency=low
+
+  * debian/control:
+    - add myself to Uploaders
+    - remove python-farstream from suggestions, it got dropped from unstable
+      (closes: #813763)
+    - update Standards-Version to 3.9.7 (no changes needed)
+  * debian/watch: update to fix checking for newer upstream versions
+  * debian/gajim.menu: removed to fix lintian warning
+
+ -- Norbert Tretkowski <norbert@tretkowski.de>  Sat, 05 Mar 2016 16:21:53 +0100
+
+gajim (0.16.5-0.1) unstable; urgency=medium
+
+  * Non-Maintainer Upload.
+  * New upstream release. (closes: #785521)
+  * SECURITY UPDATE: Update to 0.16.5 to fix security issue:
+    - CVE-2015-8688: Message interception due to unverified origin of roster
+      push
+    - https://gultsch.de/gajim_roster_push_and_message_interception.html
+    (closes: #809900)
+  * debian/patches/fix-manpages.patch: Remove deprecated patch, which has been
+    applied upstream.
+  * debian/control: Require python-nbxmpp (>= 0.5.3).
+
+ -- Norbert Tretkowski <norbert@tretkowski.de>  Tue, 26 Jan 2016 15:19:54 +0100
+
+gajim (0.16-1) unstable; urgency=medium
+
+  * New upstream release. (Closes: #729042, #757570)
+  * debian/patches:
+     - fix-oid-definitions.patch: remove deprecated patch, which
+       has been applied upstream.
+     - desktop-keywords.patch: remove deprecated patch, which has been applied
+       upstream.
+     - fix-manpages.patch: fix markup errors in manpages.
+  * debian/control:
+     - depend on python-nbxmpp
+     - update Standards-Version to 3.9.6 (no change needed).
+  * debian/copyright: remove deprecated paragraph about python-xmpppy fork,
+    which is now an distinct project.
+  * debian/rules:
+     - move the XPM icon generation to the build target instead of the
+       configure one.
+     - no longer remove a duplicate certificate which is no longer provided.
+
+ -- Tanguy Ortolo <tanguy+debian@ortolo.eu>  Tue, 14 Oct 2014 22:02:28 +0200
+
+gajim (0.15.4-2) unstable; urgency=low
+
+  * debian/control:
+     - turn dbus into a Depends rather than a Recommends, as Gajim does not
+       seem to work without it. (Closes: #701994)
+     - use a secure URL for Gajim homepage (but not for VCS web interface,
+       sorry). (Closes: #727037)
+     - recommend ca-certificates.
+  * debian/rules: remove cacerts.pem, replaced by certificates from
+    ca-certificates. (Closes: #729568)
+
+ -- Tanguy Ortolo <tanguy+debian@ortolo.eu>  Sun, 24 Nov 2013 18:58:51 +0100
+
+gajim (0.15.4-1) unstable; urgency=low
+
+  * New upstream release. (Closes: #693648)
+  * debian/control:
+     - new maintainer (myself).
+     - update dependencies (add two missing ones and reformat).
+     - update Vcs-* field for new package repository (Git).
+     - update Standards-Version to 3.9.4 (no change needed).
+  * debian/copyright: switch to machine-readable format.
+  * debian/rules: update a comment to explain with more detail why the test
+    target is broken.
+  * debian/patches:
+     - desktop-keywords.patch: add a keywords entry to the desktop
+       entry.
+     - fix-oid-definitions.patch: fix OID handling in
+       src/common/check_X509.py, thanks to Yves-Alexis Perez <corsac>.
+       (Closes: #699477)
+
+ -- Tanguy Ortolo <tanguy+debian@ortolo.eu>  Thu, 15 Aug 2013 19:55:23 +0200
+
+gajim (0.15.3-1) experimental; urgency=low
+
+  * New upstream release
+  * Switch to 3.0 (quilt) source format.
+
+ -- Yann Leboulanger <yann@leboulanger.org>  Sun, 17 Mar 2013 18:32:12 +0200
+
+gajim (0.15.1-4) unstable; urgency=low
+
+  * apply patches using dpatch in debian/rules
+
+ -- Yann Leboulanger <asterix@lagaule.org>  Fri, 15 Feb 2013 23:34:36 +0200
+
+gajim (0.15.1-3) unstable; urgency=low
+
+  * Go back to old patch format so that Gajim can go in testing.
+
+ -- Yann Leboulanger <asterix@lagaule.org>  Sun, 02 Dec 2012 19:42:34 +0200
+
+gajim (0.15.1-2) unstable; urgency=low
+
+  * re-add missing 0.15-1.1 changelog entry
+  * add a patch to prevent a traceback.
+  * add a patch to fix a crash. Closes: #690937
+
+ -- Yann Leboulanger <asterix@lagaule.org>  Sun, 14 Oct 2012 18:02:36 +0200
+
+gajim (0.15.1-1) unstable; urgency=low
+
+  * New upstream release.
+  * change python-farsight to python-farstream in suggests list. Closes: #682598
+  * Add python-gupnp-igd to suggests list. Closes: #668194
+  * Fix shortcut behaviour in roster window. Closes: #667870
+  * Improve GPG status handling. Closes: #670243
+
+ -- Yann Leboulanger <asterix@lagaule.org>  Tue, 29 Aug 2012 09:51:52 +0200
+
+gajim (0.15-1.1) unstable; urgency=high
+
+  * Non-maintainer upload by the Security Team.
+  * Fix CVE-2012-2093: insecure use of temporary files when convering LaTeX
+    IM messages to png images. Closes: #668710
+
+ -- Luk Claes <luk@debian.org>  Sat, 16 Jun 2012 18:22:00 +0200
+
+gajim (0.15-1) unstable; urgency=low
+
+  * New upstream release.
+  * remove 00_debian-copying.diff because upstream doesn't install it anymore
+  * remove 01_configure-ac.diff because upstream changed configure dependencies
+  * remove python-gnupginterface from recommands list, it's no more used
+
+ -- Yann Leboulanger <asterix@lagaule.org>  Sat, 18 Mar 2012 10:32:38 +0100
+
+gajim (0.14.4-1) unstable; urgency=low
+
+  * New upstream release. Closes: #637071
+  * Fixes weird error. Closes: #632226
+  * Stop suggesting unused python-sexy. Closes: #633301
+  * Modify 00_debian-copying.diff to also not install ChangeLog file.
+    dh_changelogs will do it.
+
+ -- Yann Leboulanger <asterix@lagaule.org>  Fri, 22 Jul 2011 12:56:30 +0200
+
+gajim (0.14.3-1) unstable; urgency=low
+
+  * New upstream release.
+  * Fix closing roster window. Closes: #630315
+
+ -- Yann Leboulanger <asterix@lagaule.org>  Sun, 19 Jun 2011 21:46:09 +0200
+
+gajim (0.14.2-1) unstable; urgency=low
+
+  * New upstream release.
+  * Fix CPU usage when testing file transfer proxies. Closes: #626576
+
+ -- Yann Leboulanger <asterix@lagaule.org>  Tue, 07 Jun 2011 19:30:43 +0200
+
+gajim (0.14.1-1) unstable; urgency=low
+
+  [ Yann Leboulanger ]
+  * New upstream release. Closes: #604966
+  * Correctly sanitize menuentries in chat window action context menu.
+    Closes: #574839
+  * Fix traceback when closing file request dialog. Closes: #587186
+  * Recommend python-openssl >= 0.9. Closes: #594772
+  * Improve a string. Closes: #553527
+  * Fix cancelling file transfer. Closes: #587679
+
+  [ Julien Valroff ]
+  * Switch to dh from CDBS and drop unused (build-)dependencies.
+  * Switch to dh_python2 from pysupport. Closes: #616819
+  * Drop useless debian/dirs.
+  * Switch to 3.0 (quilt) source format.
+  * Update Standards-Version to 3.9.2.
+  * Remove useless and unused shlibs:Depends substvar.
+  * Add a note about python-farsight in README.Debian.
+  * Add patch and use dh_autoreconf to remove build-dependencies on
+    python-dev, python-gtk2-dev and libgtk2.0-dev.
+
+ -- Yann Leboulanger <asterix@lagaule.org>  Sat, 07 May 2011 16:01:37 +0200
+
+gajim (0.13.4-1) unstable; urgency=low
+
+  * New upstream release.
+  * Fix flood when trying to join a full MUC. Closes: #575688
+
+ -- Yann Leboulanger <asterix@lagaule.org>  Fri, 02 Apr 2010 10:19:59 +0200
+
+gajim (0.13.3-1) unstable; urgency=low
+
+  * New upstream release.
+  * Fix connection to facebook. Closes: #569767
+
+ -- Yann Leboulanger <asterix@lagaule.org>  Tue, 23 Feb 2010 21:00:41 +0100
+
+gajim (0.13.2-1) unstable; urgency=low
+
+  * New upstream release.
+  * Fix gnomekeyring usage. Closes: #562913
+  * Fix completion. Closes: #563930
+  * Fix typo in suggests list. Closes: #564754
+
+ -- Yann Leboulanger <asterix@lagaule.org>  Thu, 14 Jan 2010 21:23:36 +0100
+
+gajim (0.13.1-1) unstable; urgency=low
+
+  * New upstream release. Closes: #559905
+  * Update PyGTK requirement to 2.12.0 minimum
+  * Fix filetransfer proxies testing, keepalive handling, memory leak.
+    Closes: #524514
+  * Better connection. Closes: #547267
+  * Fix proxy test on startup. Closes: #453910
+  * Fix sound playing. Closes: #527275
+  * Update debhelper compatibility level to 7
+
+ -- Yann Leboulanger <asterix@lagaule.org>  Sun, 29 Nov 2009 01:21:04 +0100
+
+gajim (0.12.5-1) unstable; urgency=low
+
+  * New upstream release which fixes file transfer. Closes: #544466
+  * Fix history manager. Closes: #539109
+  * Fix custom host / port usage. Closes: #539267
+  * update python-gnome* dependancies. Closes: #541553
+
+ -- Yann Leboulanger <asterix@lagaule.org>  Sun, 08 Aug 2009 00:06:15 +0100
+
+gajim (0.12.3-1) unstable; urgency=low
+
+  * New upstream release.
+  * OS info are now caches. Closes: #509675
+  * keepalive system has been improved. Closes: #521144
+  * Recommends python-crypto for encryption. Closes: #513892
+  * update to 3.8.2 Debian Policy
+  * update to debhelper V6
+  * added watch file
+
+ -- Yann Leboulanger <asterix@lagaule.org>  Sun, 24 Jun 2009 20:46:15 +0100
+
+gajim (0.12.1-1) unstable; urgency=low
+
+  * New upstream release.
+  * Fix coming back from suspend. Closes: #500523
+  * Fix menuitem shortcut. Closes: #440530
+  * Warn user when logs database is brocken. Closes: #447889
+  * Check server certificate using python-openssl. Closes: #450756
+  * Don't pool to get played music from Banshee. Closes: #472862
+  * Escape non-ascii password correcly. Closes: #495540
+  * Fix URL recognition. Closes: #407806
+  * Suggest python-kerberos for GSSAPI authentication.
+  * Suggest python-sexy for clickable links in chat banners.
+  * Recommends python-openssl instead of python-pyopenssl. Package name has
+    changed.
+  * Depends on libc6 for gtkspell.so module
+  * Build Gajim modules against python2.5
+
+ -- Yann Leboulanger <asterix@lagaule.org>  Wed, 21 Dec 2008 14:40:16 +0100
+
+gajim (0.11.4-1) unstable; urgency=low
+
+  * New upstream release.
+  * Fix tab switching. Closes: #452257
+  * update to 3.7.3 Debian Policy
+  * Add Homepage, Vcs-Svn, Vcs-Browser fields to control file
+
+ -- Yann Leboulanger <asterix@lagaule.org>  Wed, 05 Dec 2007 22:23:30 +0100
+
+gajim (0.11.3-1) unstable; urgency=low
+
+  * New upstream release.
+  * Fix depand list so that Gajim will work when python2.5 will be the
+    default. Closes: #445275
+  * Fix focus bug. Closes: #447985
+  * Depend on dnsutils to use SRV records. Closes: #434690
+
+ -- Yann Leboulanger <asterix@lagaule.org>  Fri, 16 Nov 2007 19:01:54 +0100
+
+gajim (0.11.2-1) unstable; urgency=low
+
+  * New upstream release.
+  * Don't optionaly depend on python2.5. Closes: #418252
+  * Better handle gnome-keyring. Closes: #433315, #424293
+  * Handle dbus restart. Closes: #434993
+  * Don't allow bookmark creation on server that don't support that.
+    Closes: #438620
+  * Fix list_contact dbus signature. Closes: #440225
+  * Remove changelog.gz from /usr/share/doc/gajim. Closes: #412632
+
+ -- Yann Le Boulanger <asterix@lagaule.org>  Sun, 22 Sep 2007 22:22:34 +0100
+
+gajim (0.11.1-1) unstable; urgency=low
+
+  * New upstream release.
+  * Don't depend on python2.4 specifically
+  * Don't recommand libdbus, python-dbus does
+  * Tooltips in chat window are now correctly destroyed. Closes: #404693
+
+ -- Yann Le Boulanger <asterix@lagaule.org>  Sun, 18 Feb 2007 22:15:57 +0100
+
+gajim (0.11-2) unstable; urgency=low
+
+  * Add missing build depends to get gajim-remote. Closes: #405969
+  * Update recommands to support dbus. Closes: #402355
+  * Make python-gnupginterface a recommanded package. Closes: #405808
+
+ -- Yann Le Boulanger <asterix@lagaule.org>  Tue, 09 Jan 2007 18:32:26 +0100
+
+gajim (0.11-1) unstable; urgency=low
+
+  * New upstream release. Closes: #403806
+  * Enable IPv6 support. Closes: #386062
+  * Fix popup-menu binding. Closes: #388564
+  * Fix quick access letter with spanish translation. Closes: #385410
+  * Fix typo in german translation. Closes: #398195
+  * Fix a bug with Gaim avatars. Closes: #398911
+
+ -- Yann Le Boulanger <asterix@lagaule.org>  Tue, 19 Dec 2006 14:25:32 +0100
+
+gajim (0.10.1-6) unstable; urgency=low
+
+  * fix LDFLAGS problem. Closes: #384439
+
+ -- Yann Le Boulanger <asterix@lagaule.org>  Mon, 24 Jul 2006 14:45:34 +0200
+
+gajim (0.10.1-5) unstable; urgency=low
+
+  * Add dependance on python2.4. Closes: #379662
+
+ -- Yann Le Boulanger <asterix@lagaule.org>  Mon, 19 Jul 2006 21:30:08 +0200
+
+gajim (0.10.1-4) unstable; urgency=low
+
+  * Fix warning at installation. Closes: #366725
+  * Fix pt_BR translation.
+
+ -- Yann Le Boulanger <asterix@lagaule.org>  Mon, 19 Jul 2006 21:30:08 +0200
+
+gajim (0.10.1-3) unstable; urgency=low
+
+  * Updated for new Python policy.
+  * nautilus-sendto is now suggested. Closes: #377309
+
+ -- Yann Le Boulanger <asterix@lagaule.org>  Mon, 17 Jul 2006 16:46:58 +0200
+
+gajim (0.10.1-2) unstable; urgency=low
+
+  * new pytyhon policy Closes: #375310
+  * default player is now 'aplay -q' Closes: #374529
+  * python-gnupginterface now support python2.4. Recommends this one.
+  * Standards-version updated to 3.7.2 (no changes needed).
+
+ -- Yann Le Boulanger <asterix@lagaule.org>  Tue, 27 Jun 2006 22:47:08 +0200
+
+gajim (0.10.1-1) unstable; urgency=low
+
+  * new upstream release
+
+ -- Yann Le Boulanger <asterix@lagaule.org>  Fri,  2 Jun 2006 22:07:29 +0200
+
+gajim (0.10-1) unstable; urgency=low
+
+  * new upstream release
+  * fix description typo Closes: #349249
+  * Gajim now recommends dnsutils instead of python-dns
+  * Gajim now depends on python2.4 Closes: #357777, #364078
+  * Use Gajim's GnuPGInterface file as there is no python2.4-gnupginterface
+    package
+
+ -- Yann Le Boulanger <asterix@lagaule.org>  Wed, 12 Apr 2006 10:55:16 +0100
+
+gajim (0.9.1-2) unstable; urgency=low
+
+  * fix group bug Closes: #345306
+
+ -- Yann Le Boulanger <asterix@lagaule.org>  Fri, 30 Dec 2005 13:09:55 +0100
+
+gajim (0.9.1-1) unstable; urgency=low
+
+  * new upstream release
+  * Gajim now reconnects when connection is lost Closes: #329376
+  * Status-changer widget's behaviour has been improved Closes: #340499
+  * Gajim now recommends python-dns Closes: #340492
+  * new russian translation Closes: #337971
+  * Gajim now depends on python-pysqlite2, recommends python-dbus and
+    notification-daemon, and suggests python-gnome2
+
+ -- Yann Le Boulanger <asterix@lagaule.org>  Fri, 27 Dec 2005 01:20:54 +0100
+
+gajim (0.8.2-1) unstable; urgency=low
+
+  * all files in ~/.gajim are not 700: Closes: #325080
+  * gajim-remote.py is now in package: Closes: #324481
+  * updated russian translation: Closes: #325126
+  * theme issue fixed: Closes: #324493
+  * Gajim can now use python-dns so SRV works: Closes: #326655
+  * Gajim now depends on python-gtk2 >= 2.6.0
+
+ -- Yann Le Boulanger <asterix@lagaule.org>  Sun, 02 Sep 2005 14:56:48 +0200
+
+gajim (0.8-1) unstable; urgency=low
+
+  * new upstream release
+  * use cdbs
+  * build-depend on libxss-dev Closes: #323524
+  * translation improved Closes: #324094,#323993
+  * Standards-version updated to 3.6.2 (no changes needed).
+
+ -- Yann Le Boulanger <asterix@lagaule.org>  Fri,  1 Jul 2005 18:35:02 +0200
+
+gajim (0.7.1-1) unstable; urgency=low
+
+  * Initial Release. Closes: #311215
+  * GnuPGInterface module is in debian, no need to keep it in sources.
+
+ -- Yann Le Boulanger <asterix@lagaule.org>  Wed, 15 Jun 2005 23:22:19 +0200

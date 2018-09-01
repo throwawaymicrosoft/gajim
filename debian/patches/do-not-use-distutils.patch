@@ -1,0 +1,104 @@
+Description: Remove unnecessary use of distutils
+Author: W. Martin Borgert <debacle@debian.org>
+Origin: vendor
+Bug-Debian: https://bugs.debian.org/893694
+Last-Update: 2018-08-21
+---
+This patch header follows DEP-3: http://dep.debian.net/deps/dep3/
+--- a/gajim/gajim.py
++++ b/gajim/gajim.py
+@@ -24,7 +24,6 @@
+ import platform
+ from ctypes import CDLL, byref, create_string_buffer
+ from ctypes.util import find_library
+-from distutils.version import LooseVersion as V
+ 
+ # Install _() in namespace
+ from gajim.common import i18n
+@@ -33,20 +32,6 @@
+ _MIN_GTK_VER = "3.22.0"
+ 
+ 
+-def _check_required_deps():
+-    try:
+-        import nbxmpp
+-    except ImportError:
+-        print('Gajim needs python-nbxmpp to run. Quitting…')
+-        sys.exit(1)
+-
+-    from distutils.version import LooseVersion as V
+-    if V(nbxmpp.__version__) < V(_MIN_NBXMPP_VER):
+-        print('Gajim needs python-nbxmpp >= %s to run. '
+-              'Quitting...' % _MIN_NBXMPP_VER)
+-        sys.exit(1)
+-
+-
+ def _init_gui(gui):
+     if gui == 'GTK':
+         _init_gtk()
+@@ -61,15 +46,6 @@
+     gi.require_version('GObject', '2.0')
+     gi.require_version('Pango', '1.0')
+ 
+-    from gi.repository import Gtk
+-    gtk_ver = '%s.%s.%s' % (Gtk.get_major_version(),
+-                            Gtk.get_minor_version(),
+-                            Gtk.get_micro_version())
+-    if V(gtk_ver) < V(_MIN_GTK_VER):
+-        print('Gajim needs GTK+ >= %s to run. '
+-              'Quitting...' % _MIN_GTK_VER)
+-        sys.exit(1)
+-
+     from gajim import gtkexcepthook
+     gtkexcepthook.init()
+ 
+@@ -116,6 +92,5 @@
+         if os.geteuid() == 0:
+             sys.exit("You must not launch gajim as root, it is insecure.")
+ 
+-    _check_required_deps()
+     _set_proc_title()
+     _init_gui('GTK')
+--- a/gajim/common/app.py
++++ b/gajim/common/app.py
+@@ -32,7 +32,6 @@
+ import sys
+ import logging
+ import uuid
+-from distutils.version import LooseVersion as V
+ from collections import namedtuple
+ 
+ import nbxmpp
+@@ -201,10 +200,6 @@
+         on a much lower version number than gnupg
+         Also we need at least python-gnupg 0.3.8
+         '''
+-        v_gnupg = gnupg.__version__
+-        if V(v_gnupg) < V('0.3.8') or V(v_gnupg) > V('1.0.0'):
+-            log('gajim').info('Gajim needs python-gnupg >= 0.3.8')
+-            raise ImportError
+         _dependencies['PYGPG'] = True
+     except ImportError:
+         pass
+--- a/gajim/common/helpers.py
++++ b/gajim/common/helpers.py
+@@ -44,7 +44,6 @@
+ import socket
+ import time
+ from datetime import datetime, timedelta
+-from distutils.version import LooseVersion as V
+ 
+ from encodings.punycode import punycode_encode
+ from string import Template
+@@ -1472,11 +1471,6 @@
+         return _get_img_proxy(attrs, proxy)
+     return _get_img_direct(attrs)
+ 
+-def version_condition(current_version, required_version):
+-    if V(current_version) < V(required_version):
+-        return False
+-    return True
+-
+ def get_available_emoticon_themes():
+     emoticons_themes = []
+     if sys.platform not in ('win32', 'darwin'):
